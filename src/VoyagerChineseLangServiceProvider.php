@@ -23,6 +23,10 @@ class VoyagerChineseLangServiceProvider extends ServiceProvider
         app(Dispatcher::class)->listen('voyager.menu.display', function ($menu) {
             $this->convertChinese($menu);
         });
+        config(['app.locale' => 'zh_CN']);
+        config(['voyager.multilingual.enabled' => true]);
+        config(['voyager.multilingual.default' => 'zh_CN']);
+        config(['voyager.multilingual.locales' => array_merge(config('voyager.multilingual.locales'), ['zh_CN'])]);
     }
 
       /**
