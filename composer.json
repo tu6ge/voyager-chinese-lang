@@ -1,0 +1,31 @@
+{
+    "name": "chinese-lang",
+    "description": "voyager chinese-lang hook",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tu6ge",
+            "email": "772364230@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "larapack/hooks": "^1.0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "VoyagerChineseLang\\": "src/"
+        }
+    },
+    "extra": {
+        "hook": {
+            "providers": [
+                "VoyagerChineseLang\\VoyagerChineseLangServiceProvider"
+            ],
+            "seeders":[
+                "database/seeders"
+            ]
+        }
+    }
+}
