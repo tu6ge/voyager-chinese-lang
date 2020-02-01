@@ -3,15 +3,19 @@
 namespace VoyagerChineseLang;
 
 use Illuminate\Events\Dispatcher;
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use TCG\Voyager\Models\Menu;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Str;
+use VoyagerChineseLang\Policies\MenuPolicy;
 
 class VoyagerChineseLangServiceProvider extends ServiceProvider
 {
    
-
+    protected $policies = [
+        Menu::class => MenuPolicy::class,
+    ];
     /**
      * Register any application services.
      *
@@ -36,7 +40,7 @@ class VoyagerChineseLangServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->registerPolicies();
     }
 
     protected function convertChinese(Menu  $menu)
