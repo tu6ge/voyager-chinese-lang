@@ -18,3 +18,7 @@ php artisan hook:enable chinese-lang
 
 在本hook启用期间，
 不要修改菜单组`admin-zh-CN`的名字，也不要删除这个菜单组
+
+## Priview
+
+![](preview.jpg)
