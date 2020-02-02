@@ -79,51 +79,51 @@ class ChineseTableSeeder extends Seeder
                 'order'      => 2,
             ])->save();
         }
-        $menuItem = MenuItem::firstOrNew([
-            'menu_id' => $menu_id,
-            'title'   => __('文章'),
-            'url'     => '',
-            'route'   => 'voyager.posts.index',
-        ]);
-        if (!$menuItem->exists) {
-            $menuItem->fill([
-                'target'     => '_self',
-                'icon_class' => 'voyager-news',
-                'color'      => null,
-                'parent_id'  => null,
-                'order'      => 2,
-            ])->save();
-        }
-        $menuItem = MenuItem::firstOrNew([
-            'menu_id' => $menu_id,
-            'title'   => __('页面'),
-            'url'     => '',
-            'route'   => 'voyager.pages.index',
-        ]);
-        if (!$menuItem->exists) {
-            $menuItem->fill([
-                'target'     => '_self',
-                'icon_class' => 'voyager-file-text',
-                'color'      => null,
-                'parent_id'  => null,
-                'order'      => 2,
-            ])->save();
-        }
-        $menuItem = MenuItem::firstOrNew([
-            'menu_id' => $menu_id,
-            'title'   => __('分类'),
-            'url'     => '',
-            'route'   => 'voyager.categories.index',
-        ]);
-        if (!$menuItem->exists) {
-            $menuItem->fill([
-                'target'     => '_self',
-                'icon_class' => 'voyager-categories',
-                'color'      => null,
-                'parent_id'  => null,
-                'order'      => 2,
-            ])->save();
-        }
+        // $menuItem = MenuItem::firstOrNew([
+        //     'menu_id' => $menu_id,
+        //     'title'   => __('文章'),
+        //     'url'     => '',
+        //     'route'   => 'voyager.posts.index',
+        // ]);
+        // if (!$menuItem->exists) {
+        //     $menuItem->fill([
+        //         'target'     => '_self',
+        //         'icon_class' => 'voyager-news',
+        //         'color'      => null,
+        //         'parent_id'  => null,
+        //         'order'      => 2,
+        //     ])->save();
+        // }
+        // $menuItem = MenuItem::firstOrNew([
+        //     'menu_id' => $menu_id,
+        //     'title'   => __('页面'),
+        //     'url'     => '',
+        //     'route'   => 'voyager.pages.index',
+        // ]);
+        // if (!$menuItem->exists) {
+        //     $menuItem->fill([
+        //         'target'     => '_self',
+        //         'icon_class' => 'voyager-file-text',
+        //         'color'      => null,
+        //         'parent_id'  => null,
+        //         'order'      => 2,
+        //     ])->save();
+        // }
+        // $menuItem = MenuItem::firstOrNew([
+        //     'menu_id' => $menu_id,
+        //     'title'   => __('分类'),
+        //     'url'     => '',
+        //     'route'   => 'voyager.categories.index',
+        // ]);
+        // if (!$menuItem->exists) {
+        //     $menuItem->fill([
+        //         'target'     => '_self',
+        //         'icon_class' => 'voyager-categories',
+        //         'color'      => null,
+        //         'parent_id'  => null,
+        //         'order'      => 2,
+        //     ])->save();
+        // }
 
         $toolsMenuItem = MenuItem::firstOrNew([
             'menu_id' => $menu_id,
