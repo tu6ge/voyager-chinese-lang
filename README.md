@@ -4,7 +4,7 @@ voyager 中文语言包
 
 ## Requirement
 
-1. PHP >= 7.1
+1. PHP >= 7.2
 2. Laravel >= 5.5
 3. [**Voyager**](https://tu6ge.github.io/voyager-doc-zh-CN/)
 
