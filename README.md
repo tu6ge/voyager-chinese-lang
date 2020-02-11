@@ -6,7 +6,7 @@ voyager 中文语言包
 
 1. PHP >= 7.2
 2. Laravel >= 5.5
-3. [**Voyager**](https://tu6ge.github.io/voyager-doc-zh-CN/)
+3. [**Voyager**](http://doc.laravel-voyager.cn/)
 
 ## Install hook
 
