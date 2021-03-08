@@ -11,13 +11,13 @@ voyager 中文语言包
 ## Install hook
 
 ```bash
-php artisan hook:install chinese-lang
+php artisan hook:install tu6ge/chinese-lang
 ```
 
 ## Enable hook
 
 ```bash
-php artisan hook:enable chinese-lang
+php artisan hook:enable tu6ge/chinese-lang
 ```
 
 ## Notice
